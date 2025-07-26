@@ -51,18 +51,22 @@ header h1 {
     color: #ccc;
 }
 
-footer {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #555;
-}
-
 footer a {
     color: #00ffea;
     text-decoration: none;
     font-weight: 600;
+    display: inline-block; /* para aplicar transform e transição */
+    transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+    will-change: transform, text-shadow, color;
 }
 
-footer a:hover {
-    text-decoration: underline;
+footer a:hover,
+footer a:focus {
+    color: #00ffd1;
+    transform: scale(1.1);
+    text-shadow:
+        0 0 8px #00ffd1,
+        0 0 20px #00ffd1aa;
+    outline: none;
 }
+
