@@ -1,27 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CW Tweaks - Em Construção</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW Tweaks</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0e0e0e;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+            /* evita que encolha */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .download-btn {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        main {
+            flex: 1;
+            /* faz o main crescer e ocupar o espaço disponível */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .highlight {
+            max-width: 800px;
+        }
+
+        .highlight h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .highlight p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .soon {
+            background-color: #2a2a2a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #ccc;
+            display: inline-block;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            flex-shrink: 0;
+            /* não deixa encolher */
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>CW Tweaks</h1>
-        </header>
-        <main>
-            <div class="message-box">
-                <h2>Site em construção</h2>
-                <p>Estamos preparando algo incrível para você!<br />Volte em breve para conferir as novidades.</p>
-            </div>
-        </main>
-        <footer>
-            <p>Contato: <a href="https://twitter.com/1crowtz" target="_blank">@1crowtz</a></p>
-        </footer>
-    </div>
+
+    <header>
+        <div class="logo">CW Tweaks</div>
+        <button class="download-btn" disabled>Download</button>
+    </header>
+
+    <main>
+        <div class="highlight">
+            <h1>Em breve</h1>
+            <p>O aplicativo está em fase de desenvolvimento. Fique atento às atualizações em:
+                <strong>@1crowtz</strong>.
+            </p>
+            <span class="soon">Disponível em breve</span>
+        </div>
+
+    </main>
+
+    <footer class="footer"
+        style="text-align: center; padding: 20px; background-color: #1a1a1a; color: #aaa; font-size: 15px;">
+        © Todos os direitos reservados para <a href="https://twitter.com/1crowtz" target="_blank"
+            style="color: #aaa; text-decoration: underline;">@1crowtz</a>
+    </footer>
 </body>
+
 </html>
